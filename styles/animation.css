@@ -1,0 +1,97 @@
+.programmer-animation {
+  width: fit-content;
+  height: fit-content;
+}
+
+#head {
+  animation: head 1.8s ease infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+#smoke1 {
+  animation: smoke 2.3s ease infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#smoke2 {
+  animation: smoke 3s ease infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+#nota5 {
+  animation: notes 1s ease infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#nota6 {
+  animation: notes 1.2s ease infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#nota4 {
+  animation: notes 1.4s ease infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#nota3 {
+  animation: notes 1.6s ease infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#nota2 {
+  animation: notes 1.8s ease infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#nota1 {
+  animation: notes 2s ease infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#left-arm {
+  animation: arms 1s linear infinite alternate;
+  transform-origin: top;
+  transform-box: fill-box;
+}
+#right-arm {
+  animation: arms 1.3s linear infinite alternate;
+  transform-origin: top;
+  transform-box: fill-box;
+}
+
+@keyframes head {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(20deg);
+  }
+}
+
+@keyframes smoke {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(90deg);
+  }
+}
+
+@keyframes notes {
+  from {
+    transform: scale(1, 1) rotateZ(0deg);
+  }
+  to {
+    transform: scale(0, 0) rotateZ(60deg);
+  }
+}
+@keyframes arms {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-4deg);
+  }
+}
