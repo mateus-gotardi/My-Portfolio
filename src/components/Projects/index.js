@@ -18,8 +18,8 @@ const Projects = () => {
 
     return (
         <ProjectStyle colors={colors}>
-            <Title>Projetos</Title>
-            <div className='projects-grid' id='projects'>
+            <div id='projects'><Title>Projetos</Title></div>
+            <div className='projects-grid' >
                 {
                     repos.map((i) => {
                         let random = Math.floor(Math.random() * 5)

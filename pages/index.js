@@ -28,7 +28,7 @@ export default function Home() {
         </div>
       </FlexSection>
       <FlexSection backgroundColor={colors.yellow} >
-        <div>
+        <div id='about'>
           <Title fontSize="3.2">Sobre mim</Title>
           <Text fontSize='1.75'>
             Nascido e criado na cidade de Jundiaí, no interior de São Paulo, sempre fui apaixonado por tecnologia e almejo uma carreira de sucesso na área de desenvolvimento web.
