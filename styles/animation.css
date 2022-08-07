@@ -2,63 +2,60 @@
   width: fit-content;
   height: fit-content;
 }
+#head,
+#smoke1,
+#smoke2,
+#nota1,
+#nota2,
+#nota3,
+#nota4,
+#nota5,
+#nota6,
+#cabeca {
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
 
 #head {
   animation: head 1.8s ease infinite alternate;
-  transform-origin: bottom;
-  transform-box: fill-box;
 }
 
 #smoke1 {
   animation: smoke 2.3s ease infinite alternate;
-  transform-origin: bottom;
-  transform-box: fill-box;
 }
 #smoke2 {
   animation: smoke 3s ease infinite alternate;
-  transform-origin: bottom;
-  transform-box: fill-box;
 }
 
 #nota5 {
   animation: notes 1s ease infinite alternate;
-  transform-origin: bottom;
-  transform-box: fill-box;
 }
 #nota6 {
   animation: notes 1.2s ease infinite alternate;
-  transform-origin: bottom;
-  transform-box: fill-box;
 }
 #nota4 {
   animation: notes 1.4s ease infinite alternate;
-  transform-origin: bottom;
-  transform-box: fill-box;
 }
 #nota3 {
   animation: notes 1.6s ease infinite alternate;
-  transform-origin: bottom;
-  transform-box: fill-box;
 }
 #nota2 {
   animation: notes 1.8s ease infinite alternate;
-  transform-origin: bottom;
-  transform-box: fill-box;
 }
 #nota1 {
   animation: notes 2s ease infinite alternate;
-  transform-origin: bottom;
+}
+#right-arm,
+#left-arm,
+#perna-baixo {
+  transform-origin: top;
   transform-box: fill-box;
 }
 #left-arm {
   animation: arms 1s linear infinite alternate;
-  transform-origin: top;
-  transform-box: fill-box;
 }
 #right-arm {
   animation: arms 1.3s linear infinite alternate;
-  transform-origin: top;
-  transform-box: fill-box;
 }
 
 @keyframes head {
@@ -94,4 +91,221 @@
   to {
     transform: rotateZ(-4deg);
   }
+}
+
+#cabeca {
+  animation: cabeca 2s ease infinite alternate;
+}
+
+#perna-baixo {
+  animation: leg-bouncing 3s ease infinite alternate;
+}
+@keyframes leg-bouncing {
+  from {
+    transform: rotateZ(-5deg);
+  }
+  to {
+    transform: rotateZ(20deg);
+  }
+}
+@keyframes cabeca {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(15deg);
+  }
+}
+#flecha {
+  animation: flecha 5s ease infinite alternate;
+  transform-origin: left;
+  transform-box: fill-box;
+}
+@keyframes flecha {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(30deg);
+  }
+}
+#dog,
+#film,
+#joystick,
+#boina,
+#plane,
+#picture,
+#music,
+#Ellipse1,
+#Ellipse2,
+#Ellipse3,
+#Ellipse4,
+#Ellipse5,
+#Ellipse6,
+#Ellipse7,
+#Ellipse8,
+#Ellipse9,
+#Rectangle208,
+#Rectangle207,
+#Rectangle209 {
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#dog {
+  animation: dog 3.2s ease infinite alternate;
+}
+@keyframes dog {
+  from {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  to {
+    transform: translate(20px, 20px) rotate(10deg);
+  }
+}
+#film {
+  animation: rotate 10s ease infinite alternate;
+}
+#joystick {
+  animation: rotate 15s ease infinite;
+  animation-direction: alternate-reverse;
+}
+#boina {
+  animation: float 4s ease infinite alternate;
+}
+#plane {
+  animation: plane 6s ease infinite alternate;
+}
+#picture {
+  animation: pictures 3s ease infinite alternate;
+}
+#music {
+  animation: music 3s ease infinite alternate;
+}
+@keyframes music {
+  from {
+    transform: translate(0px, 40px) rotate(-10deg);
+  }
+  to {
+    transform: translate(15px, -30px) rotate(30deg);
+  }
+}
+@keyframes pictures {
+  from {
+    transform: translate(40px, 65px) rotate(30deg);
+  }
+  to {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+@keyframes plane {
+  from {
+    transform: translate(-15px, 8px);
+  }
+  to {
+    transform: translate(20px, -10px);
+  }
+}
+@keyframes float {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(20px, 20px);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotateZ(0deg) translate(0, 0);
+  }
+  to {
+    transform: rotateZ(360deg) translate(15px, 5px);
+  }
+}
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+#Ellipse1,
+#Ellipse7 {
+  animation: scale 1.2s ease infinite alternate;
+}
+
+#Ellipse2,
+#Ellipse9 {
+  animation: scale 2s ease infinite alternate;
+}
+#Ellipse3 {
+  animation: scale 1.6s ease infinite alternate;
+}
+#Ellipse4,
+#Ellipse8 {
+  animation: scale 2.2s ease infinite alternate;
+}
+#Ellipse5,
+#Ellipse6 {
+  animation: scale 2.6s ease infinite alternate;
+}
+#Rectangle208,
+#Rectangle207 {
+  animation: scale 2s ease infinite alternate;
+}
+#Rectangle209 {
+  animation: scale 4s ease infinite alternate;
+}
+@keyframes foot {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(15deg);
+  }
+}
+#foot {
+  animation: foot 1.5s ease infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#BolaAmarela {
+  animation: floatBall 3s ease infinite alternate;
+  transform-origin: right;
+  transform-box: fill-box;
+}
+
+@keyframes floatBall {
+  from {
+    transform: translate(0, 0) rotateZ(0deg);
+  }
+  to {
+    transform: translate(10px, 15px) rotateZ(45deg);
+  }
+}
+
+#cubestroke1,
+#cubestroke4,
+#cube3 {
+  animation: rotate 3s ease infinite alternate;
+  transform-origin: right;
+  transform-box: fill-box;
+}
+#cubestroke3,
+#cube2 {
+  animation: rotate 2s ease infinite alternate;
+  transform-origin: left;
+  transform-box: fill-box;
+}
+#cubestroke2,
+#cube1 {
+  animation: rotate 3s ease infinite alternate;
+  transform-origin: left;
+  transform-box: fill-box;
+}
+#cube4 {
+  animation: rotate 2.5s ease infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
 }

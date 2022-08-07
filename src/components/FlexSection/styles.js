@@ -11,6 +11,6 @@ export const Section = styled.section`
         flex-direction: column;
     }
     @media (max-width:600px) {
-        .programmer-animation{display:none}
+        .animation{display:none}
     }
 `;

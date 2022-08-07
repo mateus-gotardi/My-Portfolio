@@ -4,6 +4,7 @@ import Title from './Title'
 import Header from './Header'
 import Skills from './Skills'
 import Top from './Top'
+import Projects from './Projects'
 
 const colors = {
     yellow: '#FFDC63',
@@ -11,4 +12,4 @@ const colors = {
 }
 
 
-export { Text, FlexSection, Title, Header, Skills, Top, colors }
+export { Text, FlexSection, Title, Header, Skills, Top, Projects, colors }

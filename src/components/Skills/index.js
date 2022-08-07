@@ -4,15 +4,17 @@ import { SiAdobeaftereffects, SiAdobepremierepro, SiPostgresql, SiNextdotjs, SiS
 import { DiJavascript1, DiHtml5, DiCss3, DiReact, DiMongodb, DiSass, } from 'react-icons/di'
 import { SkillsDiv } from "./styles"
 import {AiFillApi} from 'react-icons/ai'
+import SkillsSVG from "../../SVG/skills"
 
 const Skills = ({ color = colors.yellow }) => {
     return (
         <SkillsDiv color={color}>
             <FlexSection>
-                <div id="skills">
+                <div className='title_image'>
                     <Title color={colors.yellow}>Habilidades</Title>
+                    <SkillsSVG/>
                 </div>
-                <div className="skillsList">
+                <div className="skillsList" id="skills">
                     <div><DiJavascript1 />JavaScript</div>
                     <div><DiHtml5 />HTML</div>
                     <div><DiCss3 />CSS</div>

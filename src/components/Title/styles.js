@@ -10,6 +10,9 @@ export const TitleStyle = styled.h1`
         color: ${(props) => props.color};
         margin-right: 1rem;
     }
+    svg:hover{
+        transform: scale(1.3)
+    }
     @media (max-width:1020px) {
         font-size: ${(props) => props.fontSize-.6}rem;
     }

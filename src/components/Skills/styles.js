@@ -13,6 +13,11 @@ color: ${(props) => props.color};
         margin-right:.5rem
     }
 }
+.title_image{
+    svg{
+        margin-top: 2.5rem
+    }
+}
 @media (max-width:750px){
     .skillsList{
         font-size: 1rem;
