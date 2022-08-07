@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutAnimation = () => {
     return (
-        <div className="animation" id='about'>
+        <div className="animation">
             <svg width="597" height="506" viewBox="0 0 597 506" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="About">
                     <g id="tela">

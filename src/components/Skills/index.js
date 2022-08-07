@@ -3,24 +3,24 @@ import { TbMessageLanguage } from 'react-icons/tb'
 import { SiAdobeaftereffects, SiAdobepremierepro, SiPostgresql, SiNextdotjs, SiStyledcomponents, SiSequelize, SiAdobephotoshop, SiFigma, SiGithub, SiNodedotjs } from 'react-icons/si'
 import { DiJavascript1, DiHtml5, DiCss3, DiReact, DiMongodb, DiSass, } from 'react-icons/di'
 import { SkillsDiv } from "./styles"
-import {AiFillApi} from 'react-icons/ai'
+import { AiFillApi } from 'react-icons/ai'
 import SkillsSVG from "../../SVG/skills"
 
 const Skills = ({ color = colors.yellow }) => {
     return (
         <SkillsDiv color={color}>
             <FlexSection>
-                <div className='title_image'>
+                <div className='title_image' id="skills">
                     <Title color={colors.yellow}>Habilidades</Title>
-                    <SkillsSVG/>
+                    <SkillsSVG />
                 </div>
-                <div className="skillsList" id="skills">
+                <div className="skillsList">
                     <div><DiJavascript1 />JavaScript</div>
                     <div><DiHtml5 />HTML</div>
                     <div><DiCss3 />CSS</div>
                     <div><SiGithub />Git</div>
                     <div><SiNodedotjs />NodeJS</div>
-                    <div><AiFillApi/>API</div>
+                    <div><AiFillApi />API</div>
                     <div><DiReact />ReactJS</div>
                     <div><SiNextdotjs />NextJS</div>
                     <div><DiMongodb />MongoDB</div>
