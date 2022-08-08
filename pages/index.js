@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className='home-page'>
       <Head>
-        <title>Mateus Gotardi-JSFullStack</title>
+        <title>Mateus Gotardi - JSFullStack</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Header />
@@ -27,18 +27,25 @@ export default function Home() {
           </Title>
         </div>
       </FlexSection>
-      <FlexSection backgroundColor={colors.yellow} >
-        <div id='about'>
-          <Title fontSize="3.2">Sobre mim</Title>
-          <Text fontSize='1.75'>
-            Nascido e criado na cidade de Jundiaí, no interior de São Paulo, sempre fui apaixonado por tecnologia e almejo uma carreira de sucesso na área de desenvolvimento web.
-            Atualmente cursando graduação em Comunicação Social - Midialogia na Universidade Estadual de Campinas. Possuo experiência com produção audiovisual, design e diagramação.
-          </Text>
-        </div>
-        <AboutAnimation />
-      </FlexSection>
-      <Skills />
-      <Projects />
+      <div id='about'>
+        <FlexSection backgroundColor={colors.yellow} >
+          <div >
+            <Title fontSize="3.2">Sobre mim</Title>
+            <Text fontSize='1.75'>
+              Nascido e criado na cidade de Jundiaí, no interior de São Paulo, sempre fui apaixonado por tecnologia e movido à desafios. Almejo uma carreira de sucesso na área de desenvolvimento web.
+              <br/>Atualmente cursando graduação em Comunicação Social - Midialogia na Universidade Estadual de Campinas. Possuo experiência com produção audiovisual, design e diagramação.
+            </Text>
+          </div>
+          <AboutAnimation />
+        </FlexSection>
+      </div>
+      <div id="skills">
+        <Skills />
+      </div>
+      <div id='projects'>
+        <Projects />
+      </div>
+      
     </div>
   )
 }
