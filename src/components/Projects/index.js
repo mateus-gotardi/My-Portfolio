@@ -18,7 +18,7 @@ const Projects = () => {
 
     return (
         <ProjectStyle colors={colors}>
-            <div id='projects'><Title>Projetos</Title></div>
+            <div><Title>Projetos</Title></div>
             <div className='projects-grid' >
                 {
                     repos.map((i) => {

@@ -5,12 +5,12 @@ export const Section = styled.section`
     align-items: center;
     justify-content: space-around;
     background-color: ${(props)=>props.backgroundColor};
-    padding: 3.2rem 3.2rem 5rem 3.2rem;
-    gap: 1.2rem;
+    padding: 8rem 5rem 10rem 5rem;
+    gap: 4rem;
     @media (max-width:1020px) {
         flex-direction: column;
     }
-    @media (max-width:600px) {
+    @media (max-width:650px) {
         .animation{display:none}
     }
 `;

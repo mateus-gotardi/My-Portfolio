@@ -6,9 +6,8 @@ padding:10px;
 margin:0;
 .projects-grid{
     display: grid;
-    grid-template-columns: auto auto;
-    padding: 10px;
-    column-gap: 2rem;
+    grid-template-columns: 50% 50%;
+    padding: 4rem;
     row-gap: .8rem;
 };
 .project{
