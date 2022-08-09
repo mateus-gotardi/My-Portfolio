@@ -12,5 +12,7 @@ export const Section = styled.section`
     }
     @media (max-width:650px) {
         .animation{display:none}
+        padding: 8rem 2rem 10rem 2rem;
     }
+    
 `;
