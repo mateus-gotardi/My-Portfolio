@@ -27,9 +27,9 @@ const Projects = () => {
                             return (
                                 <a key={i.name} href={i.html_url} target='_blank' rel="noreferrer" className='project'>
                                     <Title fontSize='2' >{icons[random]}{' '}{i.name}</Title>
-                                    <Text fontSize='1.25'>Descrição: {i.description}</Text>
-                                    <Text fontSize='1.25'>Atualizado em: {i.updated_at}</Text>
-                                    <Text fontSize='1.25'>Linguagem Predominante: {i.language}</Text>
+                                    <Text fontSize='1.5'>Descrição: {i.description}</Text>
+                                    <Text fontSize='1.5'>Atualizado em: {i.updated_at}</Text>
+                                    <Text fontSize='1.5'>Linguagem Predominante: {i.language}</Text>
                                 </a>
                             )
                         }

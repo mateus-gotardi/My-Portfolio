@@ -8,4 +8,7 @@ export const Paragraph = styled.p`
     @media (max-width:1020px) {
         font-size: ${(props) => props.fontSize-0.2}rem;
     }
+    @media (max-width:600px) {
+        font-size: ${(props) => props.fontSize-0.7}rem;
+    }
 `;
