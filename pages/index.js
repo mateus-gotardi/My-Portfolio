@@ -32,8 +32,8 @@ export default function Home() {
           <div >
             <Title fontSize="3.2">Sobre mim</Title>
             <Text fontSize='1.75'>
-              Nascido e criado na cidade de Jundiaí, no interior de São Paulo, sempre fui apaixonado por tecnologia e movido à desafios. Almejo uma carreira de sucesso na área de desenvolvimento web.
-              <br/>Atualmente cursando graduação em Comunicação Social - Midialogia na Universidade Estadual de Campinas. Possuo experiência com produção audiovisual, design e diagramação.
+              Nascido e criado na cidade de Jundiaí, no interior de São Paulo, sempre fui apaixonado por tecnologia e movido a desafios. Almejo uma carreira de sucesso na área de desenvolvimento web.
+              <br/>Atualmente cursando graduação em Comunicação Social - Midialogia na Unicamp. Possuo experiência com produção audiovisual, design e diagramação.
             </Text>
           </div>
           <AboutAnimation />
