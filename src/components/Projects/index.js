@@ -29,7 +29,7 @@ const Projects = () => {
                                     <Title fontSize='2' >{icons[random]}{' '}{i.name}</Title>
                                     <Text fontSize='1.5'>Descrição: {i.description}</Text>
                                     <Text fontSize='1.5'>Atualizado em: {i.updated_at}</Text>
-                                    {i.homepage!=='' && <Text fontSize='1.5'>Site: {i.homepage}</Text>}
+                                    {i.homepage!=='' && i.homepage!==null ? <Text fontSize='1.5'>Site: <a>{i.homepage}</a></Text>:<></>}
                                     <Text fontSize='1.5'>Linguagem Predominante: {i.language}</Text>
                                 </a>
                             )
