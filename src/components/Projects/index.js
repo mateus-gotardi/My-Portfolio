@@ -21,11 +21,11 @@ const Projects = () => {
             <div><Title>Projetos</Title></div>
             <div className='projects-grid' >
                 {
-                    repos.map((i) => {
+                    repos.map((i, key) => {
                         let random = Math.floor(Math.random() * 5)
                         if (i.name != 'mateus-gotardi') {
                             return (
-                                <a key={i.name} href={i.html_url} target='_blank' rel="noreferrer" className='project'>
+                                <a key={key} href={i.html_url} target='_blank' rel="noreferrer" className='project'>
                                     <Title fontSize='2' >{icons[random]}{' '}{i.name}</Title>
                                     <Text fontSize='1.5'>Descrição: {i.description}</Text>
                                     <Text fontSize='1.5'>Atualizado em: {i.updated_at}</Text>
