@@ -14,6 +14,6 @@ export const TitleStyle = styled.h1`
         transform: scale(1.3)
     }
     @media (max-width:1020px) {
-        font-size: ${(props) => props.fontSize-.6}rem;
+        font-size: ${(props) => (props.fontSize/100)*95}rem;
     }
 `;

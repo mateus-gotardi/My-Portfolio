@@ -6,9 +6,9 @@ export const Paragraph = styled.p`
     text-align: center;
     font-weight: 480;
     @media (max-width:1020px) {
-        font-size: ${(props) => props.fontSize-0.2}rem;
+        font-size: ${(props) => (props.fontSize/100)*95}rem;
     }
     @media (max-width:600px) {
-        font-size: ${(props) => props.fontSize-0.7}rem;
+        font-size: ${(props) => (props.fontSize/100)*90}rem;
     }
 `;

@@ -6,7 +6,7 @@ import { DiGitPullRequest, DiGitMerge, DiGitBranch, DiGitCompare, DiGitCommit } 
 
 
 const Projects = () => {
-    const [repos, setRepos] = useState([{ name: 'Carregando...', descripion: '...', html_url: '#', updated_at: '', language: '' }])
+    const [repos, setRepos] = useState([{ name: 'Carregando...', description: '...', html_url: '#', updated_at: '', language: '' }])
     const icons = { 0: <DiGitPullRequest />, 1: <DiGitMerge />, 2: <DiGitBranch />, 3: <DiGitCompare />, 4: <DiGitCommit /> }
     useEffect(() => {
         async function getGitAPI() {
@@ -25,13 +25,17 @@ const Projects = () => {
                         let random = Math.floor(Math.random() * 5)
                         if (i.name != 'mateus-gotardi') {
                             return (
-                                <a key={key} href={i.html_url} target='_blank' rel="noreferrer" className='project'>
-                                    <Title fontSize='2' >{icons[random]}{' '}{i.name}</Title>
-                                    <Text fontSize='1.5'>Descrição: {i.description}</Text>
-                                    <Text fontSize='1.5'>Atualizado em: {i.updated_at}</Text>
-                                    {i.homepage!=='' && i.homepage!==null ? <Text fontSize='1.5'>Site: <a>{i.homepage}</a></Text>:<></>}
-                                    <Text fontSize='1.5'>Linguagem Predominante: {i.language}</Text>
-                                </a>
+                                <div key={key} className='project'>
+                                    <a href={i.html_url} target='_blank' rel="noreferrer">
+                                        <Title fontSize='2' >{icons[random]}{' '}{i.name}</Title>
+                                        <Text fontSize='1.5'>Descrição: {i.description}</Text>
+                                        <Text fontSize='1.5'>Atualizado em: {i.updated_at}</Text>
+                                        {i.homepage !== '' && i.homepage !== null && i.homepage !== undefined ?
+                                            <Text fontSize='1.5'>Site: {i.homepage}</Text> :
+                                            <></>}
+                                        <Text fontSize='1.5'>Linguagem Predominante: {i.language}</Text>
+                                    </a>
+                                </div>
                             )
                         }
 
