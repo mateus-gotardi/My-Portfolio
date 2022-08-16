@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import Link from "next/link"
-import Image from "next/image"
 import { HeaderStyle } from "./styles"
 import { colors, Text } from ".."
 import { AiOutlineClose } from 'react-icons/ai'

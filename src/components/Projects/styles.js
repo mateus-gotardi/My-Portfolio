@@ -27,6 +27,7 @@ margin:0;
     padding: 10px;
     column-gap: 2rem;
     row-gap: .8rem;
-};
+    };
+    padding: 4rem 2rem 10rem 2rem;
 }
 `;

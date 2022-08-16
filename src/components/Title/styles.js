@@ -5,7 +5,7 @@ export const TitleStyle = styled.h1`
     font-size: ${(props) => props.fontSize}rem;
     margin-bottom: 1rem;
     margin-top:1rem;
-    text-align: center;
+    text-align: ${(props) => props.textAlign ? props.textAlign : 'left'};
     a{
         color: ${(props) => props.color};
         margin-right: 1rem;
@@ -14,6 +14,7 @@ export const TitleStyle = styled.h1`
         transform: scale(1.3)
     }
     @media (max-width:1020px) {
-        font-size: ${(props) => (props.fontSize/100)*95}rem;
+        font-size: ${(props) => (props.fontSize / 100) * 95}rem;
+        text-align: center;
     }
 `;

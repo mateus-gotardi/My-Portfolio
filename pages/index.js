@@ -18,8 +18,8 @@ export default function Home() {
       <FlexSection>
         <ProgrammerAnimation />
         <div id='hello'>
-          <Title color={colors.yellow} fontSize='5'>Olá, eu sou o Mateus!</Title>
-          <Text color={colors.yellow} fontSize='2'>Javascript Full Stack Developer</Text>
+          <Title color={colors.yellow} fontSize='4.5'>Olá, eu sou o Mateus!</Title>
+          <Text color={colors.yellow} fontSize='1.6'>Desenvolvedor Javascript FullStack</Text>
           <Title color={colors.yellow} fontSize='3'>
             <a className='contact' href='https://contate.me/mateusgotardi' target='_blank' rel="noreferrer"><IoLogoWhatsapp /></a>
             <a href="https://www.linkedin.com/in/mateus-de-aguiar-gotardi-774632195/" target='_blank' rel="noreferrer"><SiLinkedin /></a>
@@ -30,10 +30,12 @@ export default function Home() {
       <div id='about'>
         <FlexSection backgroundColor={colors.yellow} >
           <div >
-            <Title fontSize="3.2">Sobre mim</Title>
-            <Text fontSize='1.75'>
-              Nascido e criado na cidade de Jundiaí, no interior de São Paulo, sempre fui apaixonado por tecnologia e movido a desafios. Almejo uma carreira de sucesso na área de desenvolvimento web.
-              <br/>Atualmente cursando graduação em Comunicação Social - Midialogia na Unicamp. Possuo experiência com produção audiovisual, design e diagramação.
+            <Title fontSize="3.2" textAlign='right'>Sobre mim</Title>
+            <Text fontSize='1.75' textAlign='right'>
+              Nascido e criado na cidade de Jundiaí, no interior de São Paulo,
+              sempre fui apaixonado por tecnologia e movido a desafios.
+              Almejo uma carreira de sucesso na área de desenvolvimento web.
+              <br />Atualmente cursando graduação em Comunicação Social - Midialogia na Unicamp. Possuo experiência com produção audiovisual, design e diagramação.
             </Text>
           </div>
           <AboutAnimation />
@@ -45,7 +47,6 @@ export default function Home() {
       <div id='projects'>
         <Projects />
       </div>
-      
     </div>
   )
 }

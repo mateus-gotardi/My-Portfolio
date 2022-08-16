@@ -11,7 +11,7 @@ const Skills = ({ color = colors.yellow }) => {
         <SkillsDiv color={color}>
             <FlexSection>
                 <div className='title_image'>
-                    <Title color={colors.yellow}>Habilidades</Title>
+                    <Title color={colors.yellow} textAlign='center'>Habilidades</Title>
                     <SkillsSVG />
                 </div>
                 <div className="skillsList">

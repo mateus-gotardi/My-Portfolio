@@ -11,5 +11,4 @@ const colors = {
     darkGrey: '#1b1b1b'
 }
 
-
 export { Text, FlexSection, Title, Header, Skills, Top, Projects, colors }

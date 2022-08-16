@@ -17,6 +17,7 @@ export const HeaderStyle = styled.header`
         display: none;
         background: none;
         border: none;
+        padding:1rem;
         svg {
             color: ${(props)=>props.colors.yellow};
             font-size: 1.5rem
@@ -49,7 +50,7 @@ export const HeaderStyle = styled.header`
     };
     #navmenuActive{
         .burgerButton{
-            margin-right: 1rem;
+            margin-right: 2rem;
         }
         z-index: 10000;
         position: fixed;
