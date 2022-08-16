@@ -12,7 +12,6 @@ const Projects = () => {
     useEffect(() => {
         async function getGitAPI() {
             const response = await api.get("/users/mateus-gotardi/repos")
-            console.log(response)
             setRepos(response.data)
         }
         getGitAPI()
