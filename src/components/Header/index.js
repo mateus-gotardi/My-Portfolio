@@ -5,6 +5,7 @@ import { colors, Text } from ".."
 import { AiOutlineClose } from 'react-icons/ai'
 import { RiMenu3Fill } from 'react-icons/ri'
 import Logo from "../../SVG/logo"
+import { LanguageToggler } from ".."
 
 const Header = () => {
     const [burger, setBurger] = useState('menu')
@@ -17,7 +18,7 @@ const Header = () => {
     }
     return (
         <HeaderStyle colors={colors}>
-            <Link href='/' className="logo" passHref><a><Logo/></a></Link>
+            <Link href='/' className="logo" passHref><a><Logo /></a></Link>
             <nav id={`nav${burger}`} className={burger}>
                 <div id={burger}>
                     <Link href="#about">
@@ -29,12 +30,12 @@ const Header = () => {
                     <Link href='#projects'>
                         <a><Text color={colors.yellow} fontSize='1.3'>Projetos</Text></a>
                     </Link>
+                    <LanguageToggler />
                 </div>
                 <button className='burgerButton' onClick={handleBurger}>
                     {burger === 'menu' ? <RiMenu3Fill className="bIcon" /> :
                         <AiOutlineClose className="bIcon" />}
                 </button>
-
             </nav>
         </HeaderStyle>
     )

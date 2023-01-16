@@ -6,7 +6,7 @@ import {colors} from '../index'
 export default function Top() {
     return (
         <TopStyles colors={colors}>
-            <Link href='#start'><AiOutlineArrowUp/></Link>
+            <Link href='#start'><a><AiOutlineArrowUp/></a></Link>
         </TopStyles>
     )
 }
