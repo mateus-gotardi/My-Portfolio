@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
   contact3: 'Name', contact4: 'Email', contact5: 'Message', contact6: 'Send'}
   const portugueseTexts = {header1: 'Sobre Mim', header2: 'Habilidades', header3: 'Projetos',
   header4: 'Contato',
-  main1: 'Olá, meu nome é Mateus', main2: 'Desenvolvedor Javascript FullStack e Video Maker',
+  main1: 'Olá, meu nome é Mateus', main2: 'Desenvolvedor FullStack e Video Maker',
   about1: 'Estou me aprofundando em desenvolvimento web a 2 anos e me formarei em comunicação social pela Unicamp em julho  de 2023', 
   about2: 'Também sou editor de vídeo, trabalho com edição de vídeo a 5 anos e tenho experiência com todo o processo de produção, desde a concepção, captação e edição de áudio e vídeo.',
   capacities1: 'Habilidades', capacities2: 'Aqui estão algumas das minhas principais habilidades',capacities3: 'Inglês Intermediário',
