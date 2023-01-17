@@ -25,6 +25,8 @@ export default function Home() {
         <div id='hello'>
           <Title color={colors.yellow} fontSize='4.5'>{english ? englishTexts.main1 : portugueseTexts.main1}</Title>
           <Text color={colors.yellow} fontSize='1.6'>{english ? englishTexts.main2 : portugueseTexts.main2}</Text>
+          <br/>
+          <Text color={colors.yellow} fontSize='1.6'>{english ? englishTexts.contact2 : portugueseTexts.contact2}</Text>
           <Title color={colors.yellow} fontSize='3'>
             <a className='contact' href='https://contate.me/mateusgotardi' target='_blank' rel="noreferrer"><IoLogoWhatsapp /></a>
             <a href="https://www.linkedin.com/in/mateus-de-aguiar-gotardi-774632195/" target='_blank' rel="noreferrer"><SiLinkedin /></a>

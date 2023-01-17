@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
   about2: 'Também sou editor de vídeo, trabalho com edição de vídeo a 5 anos e tenho experiência com todo o processo de produção, desde a concepção, captação e edição de áudio e vídeo.',
   capacities1: 'Habilidades', capacities2: 'Aqui estão algumas das minhas principais habilidades',capacities3: 'Inglês Intermediário',
   projects1: 'Projetos', projects2: 'Aqui estão listados alguns dos meus projetos',projects3:'Descrição: ', projects4:'Atualizado em: ', projects5: 'Linguagem Predominante: ' , projects6: 'Veja mais no GitHub',
-  contact1: 'Contato', contact2: "Vamos trabalhar juntos! Envie-me uma mensagem e eu entrarei em contato o mais breve possível", 
+  contact1: 'Contato', contact2: "Vamos trabalhar juntos! Envie-me uma mensagem e entrarei em contato o mais breve possível", 
   contact3: 'Nome', contact4: 'Email', contact5: 'Mensagem', contact6: 'Enviar'}
   return (
     <AppContext.Provider
