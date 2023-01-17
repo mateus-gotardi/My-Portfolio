@@ -5,6 +5,7 @@ import { useContext } from "react";
 
 export default function LanguageToggler() {
     const value = useContext(AppContext)
+    
     let {english} = value.state
     let {setEnglish} = value
 

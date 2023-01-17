@@ -4,8 +4,13 @@ import AboutAnimation from "../src/SVG/aboutSVG"
 import { Title, FlexSection, Text, Header, colors, Skills, Top, Projects } from "../src/components"
 import { IoLogoWhatsapp, IoLogoGithub } from 'react-icons/io'
 import { SiLinkedin } from 'react-icons/si'
+import AppContext from "../AppContext"
+import { useContext } from "react"
 
 export default function Home() {
+  const value = useContext(AppContext)
+  let {english} = value.state
+  let {englishTexts, portugueseTexts} = value
 
   return (
     <div className='home-page'>
