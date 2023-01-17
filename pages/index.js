@@ -9,8 +9,8 @@ import { useContext } from "react"
 
 export default function Home() {
   const value = useContext(AppContext)
-  let {english} = value.state
-  let {englishTexts, portugueseTexts} = value
+  let { english } = value.state
+  let { englishTexts, portugueseTexts } = value
 
   return (
     <div className='home-page'>
@@ -23,8 +23,8 @@ export default function Home() {
       <FlexSection>
         <ProgrammerAnimation />
         <div id='hello'>
-          <Title color={colors.yellow} fontSize='4.5'>Olá, eu sou o Mateus!</Title>
-          <Text color={colors.yellow} fontSize='1.6'>Desenvolvedor Javascript FullStack</Text>
+          <Title color={colors.yellow} fontSize='4.5'>{english ? englishTexts.main1 : portugueseTexts.main1}</Title>
+          <Text color={colors.yellow} fontSize='1.6'>{english ? englishTexts.main2 : portugueseTexts.main2}</Text>
           <Title color={colors.yellow} fontSize='3'>
             <a className='contact' href='https://contate.me/mateusgotardi' target='_blank' rel="noreferrer"><IoLogoWhatsapp /></a>
             <a href="https://www.linkedin.com/in/mateus-de-aguiar-gotardi-774632195/" target='_blank' rel="noreferrer"><SiLinkedin /></a>
@@ -35,12 +35,10 @@ export default function Home() {
       <div id='about'>
         <FlexSection backgroundColor={colors.yellow} >
           <div >
-            <Title fontSize="3.2" textAlign='right'>Sobre mim</Title>
+            <Title fontSize="3.2" textAlign='right'>{english ? englishTexts.header1 : portugueseTexts.header1}</Title>
             <Text fontSize='1.75' textAlign='right'>
-              Nascido e criado na cidade de Jundiaí, no interior de São Paulo,
-              sempre fui apaixonado por tecnologia e movido a desafios.
-              Almejo uma carreira de sucesso na área de desenvolvimento web.
-              <br />Atualmente cursando graduação em Comunicação Social - Midialogia na Unicamp. Possuo experiência com produção audiovisual, design e diagramação.
+              {english ? englishTexts.about1 : portugueseTexts.about1}
+              <br /><br/>{english?englishTexts.about2:portugueseTexts.about2}
             </Text>
           </div>
           <AboutAnimation />

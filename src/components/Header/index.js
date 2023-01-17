@@ -6,8 +6,13 @@ import { AiOutlineClose } from 'react-icons/ai'
 import { RiMenu3Fill } from 'react-icons/ri'
 import Logo from "../../SVG/logo"
 import { LanguageToggler } from ".."
+import AppContext from "../../../AppContext"
+import { useContext } from "react"
 
 const Header = () => {
+    const value = useContext(AppContext)
+    let { english } = value.state
+    let { englishTexts, portugueseTexts } = value
     const [burger, setBurger] = useState('menu')
     const handleBurger = () => {
         if (burger === 'menu') {
@@ -22,13 +27,13 @@ const Header = () => {
             <nav id={`nav${burger}`} className={burger}>
                 <div id={burger}>
                     <Link href="#about">
-                        <a><Text color={colors.yellow} fontSize='1.3'>Sobre Mim</Text></a>
+                        <a><Text color={colors.yellow} fontSize='1.3'>{english ? englishTexts.header1 : portugueseTexts.header1}</Text></a>
                     </Link>
                     <Link href='#skills'>
-                        <a><Text color={colors.yellow} fontSize='1.3'>Habilidades</Text></a>
+                        <a><Text color={colors.yellow} fontSize='1.3'>{english ? englishTexts.header2 : portugueseTexts.header2}</Text></a>
                     </Link>
                     <Link href='#projects'>
-                        <a><Text color={colors.yellow} fontSize='1.3'>Projetos</Text></a>
+                        <a><Text color={colors.yellow} fontSize='1.3'>{english ? englishTexts.header3 : portugueseTexts.header3}</Text></a>
                     </Link>
                     <LanguageToggler />
                 </div>

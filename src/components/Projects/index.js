@@ -4,9 +4,13 @@ import api from '../../services/api'
 import { colors, Text, Title } from '../index';
 import { DiGitPullRequest, DiGitMerge, DiGitBranch, DiGitCompare, DiGitCommit } from 'react-icons/di'
 import { IoLogoGithub } from 'react-icons/io'
-
+import AppContext from "../../../AppContext"
+import { useContext } from "react"
 
 const Projects = () => {
+    const value = useContext(AppContext)
+    let { english } = value.state
+    let { englishTexts, portugueseTexts } = value
     const [repos, setRepos] = useState([{ name: 'Carregando...', description: '...', html_url: '#', updated_at: '', language: '' }])
     const icons = { 0: <DiGitPullRequest />, 1: <DiGitMerge />, 2: <DiGitBranch />, 3: <DiGitCompare />, 4: <DiGitCommit /> }
     useEffect(() => {
@@ -19,7 +23,9 @@ const Projects = () => {
 
     return (
         <ProjectStyle colors={colors}>
-            <div><Title textAlign='center'>Projetos</Title></div>
+            <div><Title textAlign='center'>{english ? englishTexts.projects1 : portugueseTexts.projects1}</Title>
+                 <Text textAlign='center' fontSize='1.6'>{english ? englishTexts.projects2 : portugueseTexts.projects2}</Text>
+            </div>
             <div className='projects-grid'>
                 {
                     repos.map((i, key) => {
@@ -37,9 +43,9 @@ const Projects = () => {
                             return (
                                 <a href={link} target='_blank' rel="noreferrer" key={key} className='project'>
                                     <Title fontSize='2' >{icons[random]}{' '}{i.name}</Title>
-                                    <Text fontSize='1.5'>Descrição: {i.description}</Text>
-                                    <Text fontSize='1.5'>Atualizado em: {date}</Text>
-                                    <Text fontSize='1.5'>Linguagem Predominante: {i.language}</Text>
+                                    <Text fontSize='1.5'>{english ? englishTexts.projects3 : portugueseTexts.projects3}{i.description}</Text>
+                                    <Text fontSize='1.5'>{english ? englishTexts.projects4 : portugueseTexts.projects4}{date}</Text>
+                                    <Text fontSize='1.5'>{english ? englishTexts.projects5 : portugueseTexts.projects5}{i.language}</Text>
                                 </a>
                             )
                         }
@@ -48,7 +54,7 @@ const Projects = () => {
             </div>
             <div>
                 <a href="https://github.com/mateus-gotardi" target='_blank' rel="noreferrer">
-                    <Title fontSize='2' textAlign='center'>Veja mais no GitHub</Title>
+                    <Title fontSize='2' textAlign='center'>{english ? englishTexts.projects6 : portugueseTexts.projects6}</Title>
                     <Title fontSize='3' textAlign='center'><IoLogoGithub /></Title>
                 </a>
             </div>

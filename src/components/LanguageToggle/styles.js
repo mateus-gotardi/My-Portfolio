@@ -19,7 +19,7 @@ display: flex;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #009c3b;
+    background-color: ${(props)=>props.colors.yellow};
     -webkit-transition: .4s;
     transition: .4s;
     }
@@ -31,12 +31,12 @@ display: flex;
     width: 1rem;
     left: 4px;
     bottom: 4px;
-    background-color: #002776;
+    background-color: ${(props)=>props.colors.darkGrey};
     -webkit-transition: .4s;
     transition: .4s;
     }
   input:checked + .slider {
-    background-color: #C60C30;
+    background-color: ${(props)=>props.colors.yellow};
     }
 
   input:focus + .slider {
@@ -62,11 +62,11 @@ display: flex;
     }
   .flag{
     font-size: 1.3rem;
-    color: #FFDC63;
+    color: ${(props)=>props.colors.yellow};
   }
   .flagbr{
     font-size: 1.6rem;
-    color: #FFDC63;
+    color: ${(props)=>props.colors.yellow};
   }
 `
 

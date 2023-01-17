@@ -5,13 +5,19 @@ import { DiJavascript1, DiHtml5, DiCss3, DiReact, DiMongodb, DiSass, } from 'rea
 import { SkillsDiv } from "./styles"
 import { AiFillApi } from 'react-icons/ai'
 import SkillsSVG from "../../SVG/skills"
+import AppContext from "../../../AppContext"
+import { useContext } from "react"
 
 const Skills = ({ color = colors.yellow }) => {
+    const value = useContext(AppContext)
+    let { english } = value.state
+    let { englishTexts, portugueseTexts } = value
     return (
         <SkillsDiv color={color}>
             <FlexSection>
                 <div className='title_image'>
-                    <Title color={colors.yellow} textAlign='center'>Habilidades</Title>
+                    <Title color={colors.yellow} textAlign='center'>{english ? englishTexts.capacities1 : portugueseTexts.capacities1}</Title>
+                    <Text color={colors.yellow} fontSize='1.6' textAlign='center'>{english ? englishTexts.capacities2 : portugueseTexts.capacities2}</Text>
                     <SkillsSVG />
                 </div>
                 <div className="skillsList">
@@ -32,7 +38,7 @@ const Skills = ({ color = colors.yellow }) => {
                     <div><SiAdobephotoshop />Photoshop</div>
                     <div><SiAdobeaftereffects />After-Effects</div>
                     <div><SiAdobepremierepro />Premiere PRO</div>
-                    <div><TbMessageLanguage /> Inglês Intermediário</div>
+                    <div><TbMessageLanguage />{english ? englishTexts.capacities3 : portugueseTexts.capacities3}</div>
                 </div>
 
             </FlexSection>
