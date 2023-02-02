@@ -16,7 +16,8 @@ export default function Home() {
     <div className='home-page'>
       <Head>
         <title>Mateus Gotardi - JSFullStack</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+        <meta charSet="utf-8" />
       </Head>
       <Header />
       <Top />
