@@ -2,8 +2,8 @@ import React from 'react'
 
 const SkillsSVG = () => {
     return (
-        <div className="animation">
-            <svg width="600" height="257.29" viewBox="0 0 1020 437" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div className="animation skills-anim">
+            <svg viewBox="0 0 1020 437" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="undraw_code_thinking_re_gka2 1" clipPath="url(#clip0_0_1)">
                     <g id="character">
                         <path id="Vector" d="M30.041 422.968L25.468 405.984L88.8 380.265L95.549 405.331L30.041 422.968Z" fill="#FFB8B8" />

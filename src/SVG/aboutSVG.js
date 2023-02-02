@@ -2,8 +2,8 @@ import React from 'react'
 
 const AboutAnimation = () => {
     return (
-        <div className="animation">
-            <svg width="597" height="506" viewBox="0 0 597 506" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div className="animation about-anim">
+            <svg viewBox="0 0 597 506" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="About">
                     <g id="tela">
                         <path id="Vector" d="M575.427 413.696H21.4851C9.63843 413.696 0 404.058 0 392.211V325.54H596.912V392.211C596.912 404.058 587.274 413.696 575.427 413.696Z" fill="#E6E6E6" />
