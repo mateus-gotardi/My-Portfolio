@@ -4,6 +4,7 @@ import { SiAdobeaftereffects, SiAdobepremierepro, SiPostgresql, SiNextdotjs, SiS
 import { DiJavascript1, DiHtml5, DiCss3, DiReact, DiMongodb, DiSass, } from 'react-icons/di'
 import { SkillsDiv } from "./styles"
 import { AiFillApi } from 'react-icons/ai'
+import { FaVuejs } from 'react-icons/fa'
 import SkillsSVG from "../../SVG/skills"
 import AppContext from "../../../AppContext"
 import { useContext } from "react"
@@ -22,7 +23,7 @@ const Skills = ({ color = colors.yellow }) => {
                 </div>
                 <div className="skillsList">
                     <div><DiJavascript1 />JavaScript</div>
-                    <div><SiTypescript/>TypeScript</div>
+                    <div><SiTypescript />TypeScript</div>
                     <div><DiHtml5 />HTML</div>
                     <div><DiCss3 />CSS</div>
                     <div><SiGithub />Git</div>
@@ -30,6 +31,7 @@ const Skills = ({ color = colors.yellow }) => {
                     <div><AiFillApi />API</div>
                     <div><DiReact />ReactJS</div>
                     <div><SiNextdotjs />NextJS</div>
+                    <div><FaVuejs />VueJS</div>
                     <div><DiMongodb />MongoDB</div>
                     <div><SiPostgresql />PostgreSQL</div>
                     <div><SiSequelize />Sequelize</div>

@@ -37,9 +37,9 @@ export default function Home() {
       </FlexSection>
       <div id='about'>
         <FlexSection backgroundColor={colors.yellow} >
-          <div >
+          <div id='about_text'>
             <Title fontSize="3.2" textAlign='right'>{english ? englishTexts.header1 : portugueseTexts.header1}</Title>
-            <Text fontSize='1.5' textAlign='right'>
+            <Text fontSize='1.35' textAlign='right'>
               {english ? englishTexts.about1 : portugueseTexts.about1}
               <br /><br/>{english?englishTexts.about2:portugueseTexts.about2}
               <br /><br/>{english?englishTexts.about3:portugueseTexts.about3}

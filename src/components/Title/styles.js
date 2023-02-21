@@ -13,7 +13,7 @@ export const TitleStyle = styled.h1`
     svg:hover{
         transform: scale(1.3)
     }
-    @media (max-width:1080px) {
+    @media (max-width:1200px) {
         font-size: ${(props) => (props.fontSize / 100) * 95}rem;
         text-align: center;
     }

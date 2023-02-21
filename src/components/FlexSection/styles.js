@@ -4,15 +4,21 @@ export const Section = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: ${(props)=>props.backgroundColor};
+    background-color: ${(props) => props.backgroundColor};
     padding: 4rem 5rem 10rem 5rem;
     gap: 4rem;
     .animation{
         width: 40rem;
     }
-    @media (max-width:1080px) {
+    #about_text{
+        width: 60%;
+    }
+    @media (max-width:1200px) {
         flex-direction: column;
         padding: 4rem 2rem 10rem 2rem;
+        #about_text{
+            width: 100%;
+        }
     }
     @media (max-width:700px) {
         .animation{
