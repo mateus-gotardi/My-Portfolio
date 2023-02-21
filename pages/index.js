@@ -41,7 +41,9 @@ export default function Home() {
             <Title fontSize="3.2" textAlign='right'>{english ? englishTexts.header1 : portugueseTexts.header1}</Title>
             <Text fontSize='1.75' textAlign='right'>
               {english ? englishTexts.about1 : portugueseTexts.about1}
-              <br /><br/>{english?englishTexts.about2:portugueseTexts.about2}
+              <br />{english?englishTexts.about2:portugueseTexts.about2}
+              <br />{english?englishTexts.about3:portugueseTexts.about3}
+              <br />{english?englishTexts.about4:portugueseTexts.about4}
             </Text>
           </div>
           <AboutAnimation />
