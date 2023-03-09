@@ -54,12 +54,12 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:url" content="https://mateusgotardi.vercel.app/" />
         <meta property="og:title" content="Mateus Gotardi - Web Developer" />
         <meta property="og:description" content="Desenvolvedor Full-Stack especialista em JavaScript, TypeScript, ReactJS, Front-End, Back-End" />
-        <meta property="og:image" content="https://avatars.githubusercontent.com/u/98918812?v=4" />
+        <meta property="og:image" content="https://raw.githubusercontent.com/mateus-gotardi/My-Portfolio/main/public/metaimage/metaimage.png" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://mateusgotardi.vercel.app/" />
         <meta property="twitter:title" content="Mateus Gotardi - Web Developer" />
         <meta property="twitter:description" content="Desenvolvedor Full-Stack especialista em JavaScript, TypeScript, ReactJS, Front-End, Back-End" />
-        <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/98918812?v=4" />
+        <meta property="twitter:image" content="https://raw.githubusercontent.com/mateus-gotardi/My-Portfolio/main/public/metaimage/metaimage.png" />
       </Head>
       <Component {...pageProps} />
     </AppContext.Provider>
