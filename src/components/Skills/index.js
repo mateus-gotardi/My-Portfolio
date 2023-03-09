@@ -1,6 +1,6 @@
 import { FlexSection, Title, colors, Text } from "../index"
 import { TbMessageLanguage } from 'react-icons/tb'
-import { SiAdobeaftereffects, SiAdobepremierepro, SiPostgresql, SiNextdotjs, SiStyledcomponents, SiSequelize, SiAdobephotoshop, SiFigma, SiGithub, SiNodedotjs, SiTypescript } from 'react-icons/si'
+import { SiAdobeaftereffects, SiAdobepremierepro, SiPostgresql, SiNextdotjs, SiStyledcomponents, SiSequelize, SiAdobephotoshop, SiFigma, SiGithub, SiNodedotjs, SiTypescript, SiJest } from 'react-icons/si'
 import { DiJavascript1, DiHtml5, DiCss3, DiReact, DiMongodb, DiSass, } from 'react-icons/di'
 import { SkillsDiv } from "./styles"
 import { AiFillApi } from 'react-icons/ai'
@@ -32,6 +32,7 @@ const Skills = ({ color = colors.yellow }) => {
                     <div><DiReact />ReactJS</div>
                     <div><SiNextdotjs />NextJS</div>
                     <div><FaVuejs />VueJS</div>
+                    <div><SiJest/>Jest</div>
                     <div><DiMongodb />MongoDB</div>
                     <div><SiPostgresql />PostgreSQL</div>
                     <div><SiSequelize />Sequelize</div>

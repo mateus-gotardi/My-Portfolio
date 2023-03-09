@@ -1,100 +1,12 @@
-.programmer-animation {
-  width: fit-content;
-  height: fit-content;
-}
-#head,
-#smoke1,
-#smoke2,
-#nota1,
-#nota2,
-#nota3,
-#nota4,
-#nota5,
-#nota6,
 #cabeca {
   transform-origin: bottom;
   transform-box: fill-box;
+  animation: cabeca 2s ease infinite alternate;
 }
 
-#head {
-  animation: head 1.8s ease infinite alternate;
-}
-
-#smoke1 {
-  animation: smoke 2.3s ease infinite alternate;
-}
-#smoke2 {
-  animation: smoke 3s ease infinite alternate;
-}
-
-#nota5 {
-  animation: notes 1s ease infinite alternate;
-}
-#nota6 {
-  animation: notes 1.2s ease infinite alternate;
-}
-#nota4 {
-  animation: notes 1.4s ease infinite alternate;
-}
-#nota3 {
-  animation: notes 1.6s ease infinite alternate;
-}
-#nota2 {
-  animation: notes 1.8s ease infinite alternate;
-}
-#nota1 {
-  animation: notes 2s ease infinite alternate;
-}
-#right-arm,
-#left-arm,
 #perna-baixo {
   transform-origin: top;
   transform-box: fill-box;
-}
-#left-arm {
-  animation: arms 1s linear infinite alternate;
-}
-#right-arm {
-  animation: arms 1.3s linear infinite alternate;
-}
-
-@keyframes head {
-  from {
-    transform: rotateZ(0deg);
-  }
-  to {
-    transform: rotateZ(20deg);
-  }
-}
-
-@keyframes smoke {
-  from {
-    transform: rotateX(0deg);
-  }
-  to {
-    transform: rotateX(90deg);
-  }
-}
-
-@keyframes notes {
-  from {
-    transform: scale(1, 1) rotateZ(0deg);
-  }
-  to {
-    transform: scale(0, 0) rotateZ(60deg);
-  }
-}
-@keyframes arms {
-  from {
-    transform: rotateZ(0deg);
-  }
-  to {
-    transform: rotateZ(-4deg);
-  }
-}
-
-#cabeca {
-  animation: cabeca 2s ease infinite alternate;
 }
 
 #perna-baixo {
@@ -135,19 +47,7 @@
 #boina,
 #plane,
 #picture,
-#music,
-#Ellipse1,
-#Ellipse2,
-#Ellipse3,
-#Ellipse4,
-#Ellipse5,
-#Ellipse6,
-#Ellipse7,
-#Ellipse8,
-#Ellipse9,
-#Rectangle208,
-#Rectangle207,
-#Rectangle209 {
+#music{
   transform-origin: center;
   transform-box: fill-box;
 }
@@ -230,33 +130,6 @@
   }
 }
 
-#Ellipse1,
-#Ellipse7 {
-  animation: scale 1.2s ease infinite alternate;
-}
-
-#Ellipse2,
-#Ellipse9 {
-  animation: scale 2s ease infinite alternate;
-}
-#Ellipse3 {
-  animation: scale 1.6s ease infinite alternate;
-}
-#Ellipse4,
-#Ellipse8 {
-  animation: scale 2.2s ease infinite alternate;
-}
-#Ellipse5,
-#Ellipse6 {
-  animation: scale 2.6s ease infinite alternate;
-}
-#Rectangle208,
-#Rectangle207 {
-  animation: scale 2s ease infinite alternate;
-}
-#Rectangle209 {
-  animation: scale 4s ease infinite alternate;
-}
 @keyframes foot {
   from {
     transform: rotateZ(0deg);
@@ -268,44 +141,5 @@
 #foot {
   animation: foot 1.5s ease infinite alternate;
   transform-origin: bottom;
-  transform-box: fill-box;
-}
-#BolaAmarela {
-  animation: floatBall 3s ease infinite alternate;
-  transform-origin: right;
-  transform-box: fill-box;
-}
-
-@keyframes floatBall {
-  from {
-    transform: translate(0, 0) rotateZ(0deg);
-  }
-  to {
-    transform: translate(10px, 15px) rotateZ(45deg);
-  }
-}
-
-#cubestroke1,
-#cubestroke4,
-#cube3 {
-  animation: rotate 3s ease infinite alternate;
-  transform-origin: right;
-  transform-box: fill-box;
-}
-#cubestroke3,
-#cube2 {
-  animation: rotate 2s ease infinite alternate;
-  transform-origin: left;
-  transform-box: fill-box;
-}
-#cubestroke2,
-#cube1 {
-  animation: rotate 3s ease infinite alternate;
-  transform-origin: left;
-  transform-box: fill-box;
-}
-#cube4 {
-  animation: rotate 2.5s ease infinite alternate;
-  transform-origin: center;
   transform-box: fill-box;
 }
