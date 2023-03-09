@@ -45,12 +45,21 @@ function MyApp({ Component, pageProps }) {
       }}
     >
       <Head>
-        <meta property="og:keywords" content="Developer Desenvolvedor JavaScript TypeScript React Node FrontEnd BackEnd FullStack" />
-        <meta property="og:title" content="Mateus Gotardi" />
-        <meta property="og:description" content="Portfolio - Mateus Gotardi, Desenvolvedor Web" />
-        <meta property="og:url" content="https://mateusgotardi.vercel.app" />
-        <meta property="og:image" content="https://avatars.githubusercontent.com/u/98918812?v=4" />
+        
+        <title>Mateus Gotardi - Web Developer</title>
+        <meta name="title" content="Mateus Gotardi - Web Developer" />
+        <meta name="description" content="Desenvolvedor Full-Stack especialista em JavaScript, TypeScript, ReactJS, Front-End, Back-End" />
+        <meta property="og:keywords" content="Developer, Desenvolvedor, JavaScript, TypeScript, React, Node, FrontEnd, BackEnd, FullStack" />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://mateusgotardi.vercel.app/" />
+        <meta property="og:title" content="Mateus Gotardi - Web Developer" />
+        <meta property="og:description" content="Desenvolvedor Full-Stack especialista em JavaScript, TypeScript, ReactJS, Front-End, Back-End" />
+        <meta property="og:image" content="https://avatars.githubusercontent.com/u/98918812?v=4" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://mateusgotardi.vercel.app/" />
+        <meta property="twitter:title" content="Mateus Gotardi - Web Developer" />
+        <meta property="twitter:description" content="Desenvolvedor Full-Stack especialista em JavaScript, TypeScript, ReactJS, Front-End, Back-End" />
+        <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/98918812?v=4" />
       </Head>
       <Component {...pageProps} />
     </AppContext.Provider>
