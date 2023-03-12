@@ -10,6 +10,9 @@ export const TitleStyle = styled.h1`
         color: ${(props) => props.color};
         margin-right: 1rem;
     }
+    svg {
+        transition: transform 0.2s ease-in-out;
+    }
     svg:hover{
         transform: scale(1.3)
     }
