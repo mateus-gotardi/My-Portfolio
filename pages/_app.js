@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
     header1: 'Sobre Mim', header2: 'Habilidades', header3: 'Projetos',
     header4: 'Contato',
     main1: 'Olá, meu nome é Mateus', main2: 'Desenvolvedor FullStack e Video Maker',
-    about1: 'E aí, pessoal! Eu sou um estudante de Comunicação Social que está mergulhado no universo do desenvolvimento web full stack. Eu nasci e cresci em Jundiaí, uma cidadezinha no interior de São Paulo, e desde muito cedo me vi atraído pela tecnologia. Hoje em dia, não consigo me imaginar fazendo outra coisa.',
+    about1: 'E aí, pessoal! Eu sou estudante de Comunicação Social que está mergulhado no universo do desenvolvimento web full stack. Eu nasci e cresci em Jundiaí, uma cidadezinha no interior de São Paulo, e desde muito cedo me vi atraído pela tecnologia. Hoje em dia, não consigo me imaginar fazendo outra coisa.',
     about2: 'Acredito que a tecnologia tem o poder de transformar o mundo e quero fazer parte desse movimento. Seja criando sites e aplicativos que facilitem a vida das pessoas, ou desenvolvendo soluções inovadoras que resolvam problemas complexos, eu estou sempre buscando maneiras de usar a tecnologia para fazer a diferença.',
     about3: 'Se você está procurando um profissional apaixonado por tecnologia e dedicado a criar soluções inovadoras, não hesite em me contatar. Vamos juntos transformar o mundo com tecnologia!',
     capacities1: 'Habilidades', capacities2: 'Aqui estão algumas das minhas principais habilidades', capacities3: 'Inglês Intermediário',
