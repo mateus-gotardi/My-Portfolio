@@ -7,6 +7,9 @@ export const Section = styled.section`
     background-color: ${(props) => props.backgroundColor};
     padding: 4rem 5rem 10rem 5rem;
     gap: 4rem;
+    #about_text{
+        width: 60rem;
+    }
     .animation{
         width: 40rem;
     }

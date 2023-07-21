@@ -35,25 +35,25 @@ export default function Home() {
           </Title>
         </div>
       </FlexSection>
-      <div id='about'>
-        <FlexSection backgroundColor={colors.yellow} >
-          <div id='about_text'>
-            <Title fontSize="3.2" textAlign='right'>{english ? englishTexts.header1 : portugueseTexts.header1}</Title>
-            <Text fontSize='1.35' textAlign='right'>
-              {english ? englishTexts.about1 : portugueseTexts.about1}
-              <br /><br/>{english?englishTexts.about2:portugueseTexts.about2}
-              <br /><br/>{english?englishTexts.about3:portugueseTexts.about3}
-            </Text>
-          </div>
-          <AboutAnimation />
-        </FlexSection>
+      <div id='projects'>
+        <Projects />
       </div>
       <div id="skills">
         <Skills />
       </div>
-      <div id='projects'>
-        <Projects />
-      </div>
+      <div id='about'>
+      <FlexSection backgroundColor={colors.yellow} >
+        <div id='about_text'>
+          <Title fontSize="3.2" textAlign='right'>{english ? englishTexts.header1 : portugueseTexts.header1}</Title>
+          <Text fontSize='1.35' textAlign='right'>
+            {english ? englishTexts.about1 : portugueseTexts.about1}
+            <br /><br/>{english?englishTexts.about2:portugueseTexts.about2}
+            <br /><br/>{english?englishTexts.about3:portugueseTexts.about3}
+          </Text>
+        </div>
+        <AboutAnimation />
+      </FlexSection>
+    </div>
     </div>
   )
 }
