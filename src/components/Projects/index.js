@@ -1,3 +1,4 @@
+'use client'
 import React, { useState, useEffect } from 'react'
 import { ProjectStyle } from "./styles";
 import api from '../../services/api'
@@ -6,51 +7,35 @@ import { DiGitPullRequest, DiGitMerge, DiGitBranch, DiGitCompare, DiGitCommit } 
 import { IoLogoGithub } from 'react-icons/io'
 import AppContext from "../../../AppContext"
 import { useContext } from "react"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+import Image from 'next/image';
 
 const Projects = () => {
     const value = useContext(AppContext)
     let { english } = value.state
     let { englishTexts, portugueseTexts } = value
-    const [repos, setRepos] = useState([{ name: 'Carregando...', description: '...', html_url: '#', updated_at: '', language: '' }])
-    const icons = { 0: <DiGitPullRequest />, 1: <DiGitMerge />, 2: <DiGitBranch />, 3: <DiGitCompare />, 4: <DiGitCommit /> }
-    useEffect(() => {
-        async function getGitAPI() {
-            const response = await api.get("/users/mateus-gotardi/repos")
-            setRepos(response.data)
-        }
-        getGitAPI()
-    }, [])
+    const [repos, setRepos] = useState([{ name: 'Pokedex GameBoy', link: 'https://pokedexgbc.vercel.app', img: 'pokedex.png', description: 'Pokedex interativa inspirada no game boy color', techs: 'VueJS, Pinia, Consumo de API' },
+    { name: 'Formulário Passo a passo', link: 'https://multi-step-form-eight-livid.vercel.app', img: 'form.png', description: 'Formulário de compra com 4 passos', techs: 'NextsJS, React' },
+    { name: 'Coffee shop', img: 'cafe.png', link: 'https://coffee-shop-prototype.vercel.app', description: 'Loja online de café', techs: 'NextJS, React, Redux, Tailwind' },
+    { name: 'Data inspector 3000', link: 'https://data-spector-300-vue.vercel.app', img: "dados.png", description: 'Site recebe uma planilha de assinaturas e exibe gráficos com base nos dados', techs: 'Python, NextJS, AntDesign, Zustand, React, API Rest' }])
 
     return (
         <ProjectStyle colors={colors}>
             <div><Title textAlign='center'>{english ? englishTexts.projects1 : portugueseTexts.projects1}</Title>
-                 <Text textAlign='center' fontSize='1.6'>{english ? englishTexts.projects2 : portugueseTexts.projects2}</Text>
+                <Text textAlign='center' fontSize='1.6'>{english ? englishTexts.projects2 : portugueseTexts.projects2}</Text>
             </div>
-            <div className='projects-grid'>
-                {
-                    repos.map((i, key) => {
-                        let random = Math.floor(Math.random() * 5)
-                        let year = i.updated_at[0] + i.updated_at[1] + i.updated_at[2] + i.updated_at[3]
-                        let month = i.updated_at[5] + i.updated_at[6]
-                        let day = i.updated_at[8] + i.updated_at[9]
-                        let date = `${day}/${month}/${year}`
-                        let hasLink = i.homepage !== '' && i.homepage !== null && i.homepage !== undefined ? true : false
-                        let link = i.homepage
-                        if (hasLink && !link.includes('https://')) {
-                            link = `https://${link}`
-                        }
-                        if (i.name != 'mateus-gotardi' && i.name != 'My-Portfolio' && hasLink) {
-                            return (
-                                <a href={link} target='_blank' rel="noreferrer" key={key} className='project'>
-                                    <Title fontSize='2' >{icons[random]}{' '}{i.name}</Title>
-                                    <Text fontSize='1.5'>{english ? englishTexts.projects3 : portugueseTexts.projects3}{i.description}</Text>
-                                    <Text fontSize='1.5'>{english ? englishTexts.projects4 : portugueseTexts.projects4}{date}</Text>
-                                    <Text fontSize='1.5'>{english ? englishTexts.projects5 : portugueseTexts.projects5}{i.language}</Text>
-                                </a>
-                            )
-                        }
-                    })
-                }
+            <div className='slideContainer'>
+                <Swiper modules={[Navigation, Pagination, Autoplay]} autoplay={{ delay: 5000 }}>
+                    {repos.map((item, index) => <SwiperSlide key={index}><div className='slide'>
+                        <h1>{item.name}</h1>
+                        <Image alt={item.name} src={`/${item.img}`} width={1250} height={746} />
+                        <p>{item.description}</p>
+                        <p><b>feito com: </b>{item.techs}</p>
+                        <a className='projectLink' href={item.link} target='_blank' rel="noreferrer" >Acessar Projeto</a>
+                    </div></SwiperSlide>)}
+                </Swiper>
             </div>
             <div>
                 <a href="https://github.com/mateus-gotardi" target='_blank' rel="noreferrer">

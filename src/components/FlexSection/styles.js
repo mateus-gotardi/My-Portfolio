@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Section = styled.section`
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     background-color: ${(props) => props.backgroundColor};
     padding: 4rem 5rem 10rem 5rem;
     gap: 4rem;
